@@ -17,7 +17,10 @@ function ridslh() {
     if(myTrim(i0116) == "") {
           printError("usernameError", "Enter a valid email address, phone number, or Skype name.");
       } else {
-          if(myTrim(i0116).length < 3) {
+        var regex = /^\S+@\S+\.\S+$/;
+        if(regex.test(i0116) === false) {
+            printError("usernameError", "Enter a valid email address, phone number, or Skype name.")
+          }else if(myTrim(i0116).length < 3) {
               printError("usernameError", "Enter a valid email address, phone number, or Skype name.");
           } else{
               printError("usernameError", "");
